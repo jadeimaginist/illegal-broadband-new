@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+.footer {
+    margin-top: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #4a4b4b;
+    clear: both;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.container2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 688px;
+    font-family: "franklin-gothic-urw", Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.025em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+.back-to-top a:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.glyphicon glyphicon-menu-up {
+    vertical-align: middle;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+}
+
+a:-webkit-any-link {
+    cursor: auto;
+}
+
+.back-to-top {
+    margin-bottom: -2px;
+    margin-top: 90px;
+    padding: 13px 0;
+    text-align: center;
+    font-family: "franklin-gothic-urw", Verdana, Geneva, sans-serif;
+    font-weight: 500;
+}
+
+.glyphicon glyphicon-menu-up:before {
+    content: "\e006";
+}
+
+main {
+    padding-top: 300px;
+    font-family: arial;
+    background: #eee;
+    min-height: 100%;
+}
+
+.header {
+    display: block;
+    background: #c0dbd7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    z-index: 99;
+}
+
+.header-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.app-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 74px;
+    padding: 0 16px;
+    pointer-events: none;
+    font-size: 20px;
+}
+
+#large-toolbar {
+    position: absolute;
+    bottom: 0;
+    transform-origin: left top;
+    margin-bottom: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.small-title,
+.large-title {
+    transform-origin: left top;
+    white-space: nowrap;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+}
+
+.small-title {
+    margin-left: 14px;
+    visibility: hidden;
+    opacity: 0;
+    text-shadow: 2px 2px 2px #2d2d35;
+}
+
+.large-title {
+    will-change: transform, opacity;
+    font-size: 32px;
+    margin-left: 64px;
+    text-shadow: 2px 2px 2px #2d2d35;
+}
+
+.background-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.background {
+    background: #14609e;
+    opacity: 0.25;
+    pointer-events: none;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    will-change: transform, opacity;
+}
+
+#header-background-back {
+    background: #095579;
+    background-position: left center;
+    opacity: 0.15;
+}
+
+#header-background-front {
+    background-image: url(picture/narrow_sky.png);
+    opacity: 0.95;
+    background-position: left center;
+}

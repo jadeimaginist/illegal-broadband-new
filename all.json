@@ -1,0 +1,119 @@
+{
+
+    "title": {
+        "color": "#267cb9",
+        "text": "2004-2014 All Products Consumption By Sectors"
+    },
+    "color": ["#e966ad", "#6dc488", "#347388", "#ebcc22", "#3d762c"],
+    "tooltip": {
+        "trigger": "item",
+        "formatter": "{a} ，{b} :{c} ,{d} %"
+    },
+
+    "legend": {
+        "left": "25%",
+        "y": "15",
+        "data": ["Causeway Bay(RS)", "Causeway Bay(RS)", "Mong Kok(RS)"],
+        "selected": {
+            "Industrial": false,
+            "Transport": false
+        },
+        "label": {
+            "normal": {
+                "textStyle": {
+                    "fontSize": "9"
+                }
+            }
+        }
+    },
+    "toolbox": {
+        "show": true,
+        "feature": {
+            "dataView": {
+                "show": true,
+                "readOnly": false
+            },
+            "restore": {
+                "show": true
+            },
+            "saveAsImage": {
+                "show": true
+            }
+        }
+    },
+    "xAxis": [{
+        "type": "category",
+        "axisTick": {
+            "alignWithLabel": true
+        },
+        "data": ["2011", "2012", "2013", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
+    }],
+    "yAxis": [{
+        "type": "value",
+        "name": "Energy-Used (Unit : Terajoule)",
+        "min": "0",
+        "max": "140000",
+        "position": "left",
+        "axisLine": {
+            "lineStyle": {
+                "color": ["#e966ad", "#6dc488", "#347388", "#db5716", "black"]
+            }
+        },
+        "axisLabel": {
+            "formatter": "{value} TJ"
+        }
+    }, {
+        "type": "value",
+        "name": "Total",
+        "min": 270000,
+        "max": 290000,
+        "position": "right",
+        "axisLine": {
+            "lineStyle": {
+                "color": ["#e966ad", "#6dc488", "#347388", "#db5716", "black"]
+            }
+        },
+        "splitLine": "false",
+        "axisLabel": {
+            "formatter": "{value} TJ"
+        }
+    }],
+    "series": [{
+        "name": "Residential",
+        "type": "bar",
+        "yAxisIndex": 0,
+        "data": ["53053", "54759", "53982", "54717", "55849", "57731", "58396", "59544", "60888", "59459", "62958"]
+    }, {
+        "name": "Commercial",
+        "type": "bar",
+        "yAxisIndex": 0,
+        "data": ["105800", "107281", "111884", "113914", "113753", "114297", "116391", "117663", "119843", "119965", "121480"]
+    }, {
+        "name": "Industrial",
+        "type": "bar",
+        "yAxisIndex": 0,
+        "data": ["20686", "19809", "18934", "17645", "17332", "16129", "16053", "14735", "14727", "14588", "14723"]
+    }, {
+        "name": "Transport",
+        "type": "bar",
+        "yAxisIndex": 0,
+        "data": ["100776", "98689", "96404", "96165", "94504", "90643", "90889", "90774", "90423", "90198", "89999"]
+    }, {
+        "name": "Total",
+        "type": "line",
+        "yAxisIndex": 1,
+        "color": "black",
+        "data": ["280315", "280537", "281204", "282440", "281438", "278799", "281729", "282716", "285881", "284210", "289160"],
+        "markLine": {
+            "lineStyle": {
+                "normal": {
+                    "type": "dashed"
+                }
+            },
+            "data": [
+                [{ "type": "min" }, { "type": "max" }]
+            ]
+        }
+    }]
+
+}
